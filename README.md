@@ -73,11 +73,13 @@ With completion your pyspark job, you will get several output
 
 ## Google Cloud Storage
 CSV
+
 1. Check on your Google Cloud Storage, there will be a partitioned CSV files by Flight Date
 
 ![csvoutput](https://user-images.githubusercontent.com/84316622/125418553-fd267e20-7027-45da-a5b0-d282454a9992.png)
 
 Parquet
+
 2. Check on your Google Cloud Storage, there will be a partitioned Parquet files by Flight Date
 ![parquetoutput](https://user-images.githubusercontent.com/84316622/125418857-27b6361a-de33-4c00-b7eb-a44b80396f54.png)
 
@@ -100,16 +102,19 @@ As a Data Engineer, beside building pipeline we need to pay attention to reduce 
 
 ## Big Query
 1. Flights Summary
+
 This table have a summary from all the raw data but have transformed Flight Date and partitioned by Flight Date
 
 ![bq_flights_summary](https://user-images.githubusercontent.com/84316622/125420694-e39342d1-ea81-43a5-a99e-d4918fe974c4.png)
 
 2. Count Total Flight
+
 This table have an aggregated data to count Airline Code and partitioned by Flight Date
 
 ![bq_count_total_flight](https://user-images.githubusercontent.com/84316622/125421063-33681b2e-91f4-4779-badf-2bbeb27150bd.png)
 
 3. Count Delay
+
 This table have an aggregated data to count average delay by Departure and Arrived Delay
 
 ![bq_count_delay](https://user-images.githubusercontent.com/84316622/125421242-21980bd8-e5b9-4fd0-8a1d-6adf9a46f9b6.png)
